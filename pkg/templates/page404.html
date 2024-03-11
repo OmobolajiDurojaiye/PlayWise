@@ -1,0 +1,29 @@
+{% extends 'index.html' %}
+
+{% block content %}
+    <style>
+        .notfound {
+            position: relative;
+            height: 80vh;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+
+
+
+    <div class="notfound">
+        <h2 style="font-size: 4em;">
+            PAGE NOT FOUND!
+        </h2>
+        <p class="mt-5">
+            Ooops!... The page you're looking for does not exist
+        </p>
+        <a href="/">
+            Go home
+        </a>
+    </div>
+{% endblock content %}

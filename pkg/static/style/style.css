@@ -1,0 +1,147 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: #fff !important;
+    text-decoration: none !important;
+    font-family: "Rubik", sans-serif;
+}
+
+h1, h2 {
+    font-family: "Roboto Mono", monospace;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(to bottom, #141414, #006C37, #141414);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+.cont {
+    height: 90vh;
+    width: 90%;
+    border-radius: 20px;
+    /* border: 1px solid #141414; */
+    background: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.6) 0%,
+        rgba(26, 26, 26, 0.4) 15%,
+        
+        rgba(26, 26, 26, 0.4) 85%,
+        rgba(0, 0, 0, 0.6) 100%
+    );
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.head {
+    height: max-content;
+    padding: 2%;
+    /* border-bottom: 2px solid red; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-social, .nav-links {
+    width: max-content;
+    /* border: 1px solid red; */
+}
+
+.nav-social a, .nav-links a {
+    padding: 0 5px;
+}
+
+.welc {
+    position: relative;
+    height: 80vh !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.welc::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.welc h2 {
+    position: absolute; 
+    top: 40%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    font-weight: light; 
+    font-size: 4.5em; 
+    z-index: 1; 
+    color: green !important; 
+    mix-blend-mode: overlay;
+}
+
+.welc h1 {
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    font-weight: bold; 
+    font-size: 6em; 
+    z-index: 999; 
+    color: #fff;
+}
+
+.welc a {
+    background-color: #006C37;
+    position: relative;
+    top: 12vh;
+}
+
+.btm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: max-content;
+    padding: 2px;
+    /* border: 1px solid brown; */
+    position: relative;
+    top: 1vh;
+}
+
+.btm p {
+    font-size: 0.8em;
+}
+
+@media only screen and (max-width: 768px) {
+    .nav-social, .nav-links {
+        width: 100%;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .head {
+        flex-direction: column;
+    }
+
+    .welc a {
+        margin-top: 20px;
+    }
+
+    .welc h1 {
+        font-size: 3em;
+    }
+
+    .welc h2 {
+        font-size: 2em;
+    }
+}
